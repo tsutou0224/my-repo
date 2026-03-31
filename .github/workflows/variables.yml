@@ -1,5 +1,8 @@
 name: Variables
-on: push
+on: 
+  push:
+    paths:
+      - ".github/workflows/variables.yml"
 jobs:
   print:
     runs-on: ubuntu-latest

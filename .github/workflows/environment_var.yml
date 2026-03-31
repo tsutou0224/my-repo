@@ -1,5 +1,8 @@
 name: Environment variables
-on: push
+on: 
+  push:
+    paths:
+      - ".github/workflows/environment_var.yml"
 jobs:
   run:
     runs-on: ubuntu-latest

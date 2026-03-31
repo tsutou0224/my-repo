@@ -1,5 +1,8 @@
 name: Override environment variables
-on: push
+on: 
+  push:
+    paths:
+      - ".github/workflows/override_env_var.yml"
 env:
   EXAMPLE: Defined by workflow level
 jobs:
